@@ -3,7 +3,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     connect = require('gulp-connect'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    fileinclude = require('gulp-file-include');
 
 gulp.task('sass', function () {
     gulp.src('scss/style.scss')
@@ -21,6 +22,11 @@ gulp.task('sass', function () {
 
 gulp.task('html', function () {
     gulp.src('*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '_partials/'
+        }))
+        .pipe(gulp.dest('./.tmp'))
         .pipe(connect.reload());
 });
 
@@ -29,11 +35,12 @@ gulp.task('watch', ['sass'], function () {
     gulp.watch('**/*.html', ['html']);
 });
 
-gulp.task('webserver', function() {
+gulp.task('webserver', function () {
     connect.server({
+        root: ['.tmp', '.'],
         livereload: true,
         post: 1337
     });
 });
 
-gulp.task('default', ['webserver', 'watch']);
+gulp.task('default', ['html', 'webserver', 'watch']);
