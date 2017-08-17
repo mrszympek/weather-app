@@ -25,17 +25,17 @@ $all-buttons-list: 'button',
 'input[type="submit"]';
 
 //
-// Pixels to ems function
+// Pixels to rems function
 //
-@function px2em($px) {
-	@return ($px / $base-font-size) * 1em;
+@function px2rem($px) {
+	@return ($px / $base-font-size) * 1rem;
 }
 
 //
 // Font size and line height mixin
 //
 @mixin font-size($font-size, $line-height: false) {
-	font-size: px2em($font-size); /* #{$font-size} */
+	font-size: px2rem($font-size); /* #{$font-size} */
 
 	@if $line-height != false {
 		line-height: ($line-height / $font-size); /* #{$line-height} */
@@ -75,9 +75,9 @@ $mq-breakpoints: (
 	$min-width: 0;
 
 	@if type-of($from) == number {
-		$min-width: px2em($from);
+		$min-width: px2rem($from);
 	} @else {
-		$min-width: px2em(map-get($mq-breakpoints, $from));
+		$min-width: px2rem(map-get($mq-breakpoints, $from));
 	}
 
 	@if $min-width != 0 {
