@@ -1,0 +1,22 @@
+.btn {
+	font-size: px2rem(18px);
+	font-weight: 700;
+	border-radius: 5px;
+	color: #fff;
+	font-family: $font-default;
+	box-shadow: $box-shadow;
+	cursor: pointer;
+	padding: 1rem 2rem;
+
+	@include mq(desktop) {
+	padding: px2rem(16px) px2rem(40px);
+	}
+}
+
+.btn-dark-blue {
+	background-color: $dark-blue;
+}
+
+.btn-red {
+	background-color: $red;
+}

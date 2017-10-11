@@ -1,0 +1,151 @@
+.welcome {
+	background: url("../assets/img/background.png") no-repeat;
+	background-size: cover;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	padding-top: 3rem;
+
+	&-logo {
+		margin-right: px2rem(140px);
+
+		a {
+			display: block;
+
+			img {
+				vertical-align: -7px;
+			}
+		}
+	}
+
+	&-menu {
+		display: none;
+
+		@include mq(desktop) {
+			display: flex;
+
+			li + li {
+				margin-left: 5rem;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: px2rem(18px);
+			}
+		}
+
+	}
+
+	&-social {
+		display: none;
+
+		@include mq(desktop) {
+
+			display: flex;
+			margin-left: px2rem(150px);
+
+			li + li {
+				margin-left: 3rem;
+			}
+
+			a {
+				display: block;
+
+				img {
+					height: 25px;
+					width: 25px;
+				}
+			}
+		}
+
+	}
+}
+
+.welcome-section {
+	color: #fff;
+	display: flex;
+	margin: 3rem 0 .5rem;
+
+	@include mq(desktop) {
+		margin: px2rem(150px) 0 px2rem(10px);
+	}
+}
+
+.welcome-header {
+	max-width: px2rem(484px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@include mq(desktop) {
+		margin-right: px2rem(78px);
+
+	}
+}
+
+.welcome-title {
+	font-weight: 700;
+	margin-bottom: px2rem(43px);
+	font-size: 2.5rem;
+
+	@include mq(desktop) {
+	font-size: px2rem(60px);
+
+	}
+}
+
+.welcome-description {
+	font-size: px2rem(18px);
+	margin-bottom: px2rem(60px);
+	line-height: (30/18);
+}
+
+.welcome-buttons {
+	margin-bottom: 2.5rem;
+
+	@include mq(desktop) {
+		margin-bottom: 0;
+	}
+
+	.btn {
+		margin: 0 .5rem;
+
+		@include mq(desktop) {
+			margin-right: px2rem(13px);
+			max-width: px2rem(158px);
+		}
+	}
+}
+
+.welcome-image {
+	display: none;
+
+	@include mq(desktop) {
+		display: block;
+	}
+}
+
+.scroll-btn {
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #fff;
+	width: 49px;
+	height: 49px;
+	position: relative;
+	box-shadow: $box-shadow;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 40%;
+		left: 42%;
+		transform: rotate(130deg);
+		border-right: 2px solid $red;
+		border-top: 2px solid $red;
+		width: 0.4rem;
+		height: 0.4rem;
+	}
+}
