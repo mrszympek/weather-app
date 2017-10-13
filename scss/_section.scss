@@ -1,0 +1,20 @@
+.section {
+	margin-top: px2rem(120px);
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: px2rem(120px);
+}
+
+.section-title {
+	font-size: px2rem(36px);
+	color: $blue;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.section-decription {
+	font-size: px2rem(18px);
+	color: $gray;
+}

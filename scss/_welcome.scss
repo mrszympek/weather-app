@@ -1,6 +1,7 @@
 .welcome {
-	background: url("../assets/img/background.png") no-repeat;
+	background: url("../assets/img/background.png") no-repeat bottom;
 	background-size: cover;
+	//background-position: bottom;
 }
 
 .nav {
@@ -92,7 +93,7 @@
 	font-size: 2.5rem;
 
 	@include mq(desktop) {
-	font-size: px2rem(60px);
+		font-size: px2rem(60px);
 
 	}
 }
@@ -129,23 +130,28 @@
 }
 
 .scroll-btn {
-	margin: 0 auto;
-	border-radius: 50%;
-	background-color: #fff;
-	width: 49px;
-	height: 49px;
-	position: relative;
-	box-shadow: $box-shadow;
+	text-align: center;
+	padding-bottom: 4rem;
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 40%;
-		left: 42%;
-		transform: rotate(130deg);
-		border-right: 2px solid $red;
-		border-top: 2px solid $red;
-		width: 0.4rem;
-		height: 0.4rem;
+	button {
+		margin: 0 auto;
+		border-radius: 50%;
+		background-color: #fff;
+		width: 49px;
+		height: 49px;
+		position: relative;
+		box-shadow: $box-shadow;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 40%;
+			left: 42%;
+			transform: rotate(130deg);
+			border-right: 2px solid $red;
+			border-top: 2px solid $red;
+			width: 0.4rem;
+			height: 0.4rem;
+		}
 	}
 }
