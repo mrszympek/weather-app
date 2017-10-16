@@ -1,0 +1,24 @@
+.screenshot-row {
+	display: flex;
+	align-items: center;
+}
+
+.screenshot-logo {
+	margin-bottom: px2rem(20px);
+}
+
+.screenshot-row-desc {
+	max-width: px2rem(500px);
+	margin-left: 3rem;
+
+	h2 {
+		color: $blue;
+	}
+
+	p {
+		font-size: 1.5rem;
+		line-height: px2rem(36px);
+		color: #353854;
+		margin-bottom: 4rem;
+	}
+}

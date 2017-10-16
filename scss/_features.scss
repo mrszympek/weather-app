@@ -1,13 +1,37 @@
 .feature-boxes {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+
+	@include mq(tablet) {
+		flex-direction: row;
+	}
 
 	li {
+		margin-bottom: 2rem;
 		display: flex;
+
+		@include mq(tablet) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include mq(desktop) {
+			flex-direction: row;
+			margin-bottom: 0;
+			align-items: flex-start;
+		}
+
 	}
 
 	li + li {
-		margin-left: 2rem;
+
+		@include mq(tablet) {
+			margin: 0 1rem;
+		}
+
+		@include mq(desktop) {
+			margin-left: 2rem;
+		}
 	}
 }
 
@@ -16,6 +40,10 @@
 
 	img {
 		float: left;
+
+		@include mq(tablet) {
+			margin-bottom: 1rem;
+		}
 	}
 }
 

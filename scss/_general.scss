@@ -20,5 +20,9 @@ body {
 }
 
 .main {
-	margin-top: px2rem(120px);
+	margin-top: 4rem;
+
+	@include mq(desktop) {
+		margin-top: px2rem(120px);
+	}
 }

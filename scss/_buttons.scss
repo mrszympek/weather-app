@@ -7,6 +7,7 @@
 	box-shadow: $box-shadow;
 	cursor: pointer;
 	padding: 1rem 2rem;
+	transition: .3s background-color;
 
 	@include mq(desktop) {
 	padding: px2rem(16px) px2rem(40px);
@@ -14,9 +15,9 @@
 }
 
 .btn-dark-blue {
-	background-color: $dark-blue;
+	@include button-color($blue);
 }
 
 .btn-red {
-	background-color: $red;
+	@include button-color($red);
 }
