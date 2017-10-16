@@ -1,6 +1,8 @@
 .screenshot-row {
 	display: flex;
 	align-items: center;
+	margin-bottom: px2rem(210px);
+	justify-content: center;
 }
 
 .screenshot-logo {
@@ -20,5 +22,14 @@
 		line-height: px2rem(36px);
 		color: #353854;
 		margin-bottom: 4rem;
+	}
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+
+	.screenshot-row-desc {
+		margin-left: 0;
+		margin-right: 3rem;
 	}
 }
