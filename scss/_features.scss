@@ -17,6 +17,7 @@
 		}
 
 		@include mq(desktop) {
+			text-align: left;
 			flex-direction: row;
 			margin-bottom: 0;
 			align-items: flex-start;
@@ -40,6 +41,10 @@
 .feature-img {
 	margin-right: px2rem(21px);
 	width: 30%;
+
+	@include mq(desktop) {
+		width: 60%;
+	}
 
 	img {
 		float: left;
