@@ -1,8 +1,12 @@
 .screenshot-row {
 	display: flex;
 	align-items: center;
-	margin-bottom: px2rem(210px);
 	justify-content: center;
+	margin-bottom: 6rem;
+
+	@include mq(desktop) {
+		margin-bottom: px2rem(210px);
+	}
 }
 
 .screenshot-logo {
@@ -11,18 +15,31 @@
 
 .screenshot-row-desc {
 	max-width: px2rem(500px);
-	margin-left: 3rem;
+	text-align: center;
+
+	@include mq(desktop) {
+		margin-left: 3rem;
+	}
 
 	h2 {
+		@include fluid-font(28px, 36px);
 		color: $blue;
 	}
 
 	p {
-		font-size: 1.5rem;
+		@include fluid-font(18px, 24px);
 		line-height: px2rem(36px);
 		color: #353854;
-		margin-bottom: 4rem;
+		margin-bottom: 1rem;
+
+		@include mq(desktop) {
+			margin-bottom: 4rem;
+		}
 	}
+}
+
+.screenshot-row-image {
+	display: none;
 }
 
 .row-reverse {
@@ -30,6 +47,9 @@
 
 	.screenshot-row-desc {
 		margin-left: 0;
-		margin-right: 3rem;
+
+		@include mq(desktop) {
+			margin-right: 3rem;
+		}
 	}
 }

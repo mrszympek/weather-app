@@ -5,8 +5,11 @@
 }
 
 html {
+	-webkit-font-smoothing: antialiased;
+	//font-size: 80%;
 	font-size: 100%;
-	-webkit-font-smoothing: antialiased
+	@include mq(desktop) {
+	}
 }
 
 body {

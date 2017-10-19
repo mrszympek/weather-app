@@ -37,9 +37,11 @@
 
 .feature-img {
 	margin-right: px2rem(21px);
+	width: 30%;
 
 	img {
 		float: left;
+		width: 100%;
 
 		@include mq(tablet) {
 			margin-bottom: 1rem;
