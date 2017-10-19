@@ -40,9 +40,13 @@
 
 .feature-img {
 	margin-right: px2rem(21px);
-	width: 30%;
+
+	@include mq(tablet) {
+		margin-right: 0;
+	}
 
 	@include mq(desktop) {
+		margin-right: px2rem(21px);
 		width: 60%;
 	}
 
