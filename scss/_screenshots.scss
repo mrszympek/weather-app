@@ -29,15 +29,14 @@
 .screenshot-row-desc {
 	max-width: px2rem(500px);
 	text-align: center;
-	
+
 	@include mq(tablet) {
 		text-align: left;
 		margin-right: 2rem;
 	}
 
 	@include mq(desktop) {
-		margin-left: 3rem;
-		margin-right: 0;
+		margin: 0 2rem;
 	}
 
 	h2 {
@@ -64,6 +63,15 @@
 		display: block;
 		margin-left: -30%;
 	}
+
+	@include mq(desktop) {
+		margin-left: -5%;
+	}
+
+	@include mq(wide) {
+		margin-left: 0;
+	}
+
 }
 
 .row-reverse {
@@ -76,13 +84,20 @@
 		}
 
 		@include mq(desktop) {
-			margin-right: 3rem;
-			margin-left: 0;
+			margin: 0 2rem;
 		}
 	}
 
 	.screenshot-row-image {
 		margin-right: -30%;
 		margin-left: 0;
+
+		@include mq(desktop) {
+			margin-right: -5%;
+		}
+
+		@include mq(wide) {
+			margin-right: 0;
+		}
 	}
 }
