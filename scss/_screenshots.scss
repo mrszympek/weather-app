@@ -1,8 +1,21 @@
+.scrennshots-section {
+	.container {
+		@include mq(tablet) {
+			padding: 0;
+		}
+	}
+}
+
 .screenshot-row {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 6rem;
+	overflow: hidden;
+
+	@include mq(tablet) {
+		justify-content: space-between;
+	}
 
 	@include mq(desktop) {
 		margin-bottom: px2rem(210px);
@@ -16,9 +29,15 @@
 .screenshot-row-desc {
 	max-width: px2rem(500px);
 	text-align: center;
+	
+	@include mq(tablet) {
+		text-align: left;
+		margin-right: 2rem;
+	}
 
 	@include mq(desktop) {
 		margin-left: 3rem;
+		margin-right: 0;
 	}
 
 	h2 {
@@ -40,6 +59,11 @@
 
 .screenshot-row-image {
 	display: none;
+
+	@include mq(tablet) {
+		display: block;
+		margin-left: -30%;
+	}
 }
 
 .row-reverse {
@@ -47,9 +71,18 @@
 
 	.screenshot-row-desc {
 		margin-left: 0;
+		@include mq(tablet) {
+			margin-left: 2rem;
+		}
 
 		@include mq(desktop) {
 			margin-right: 3rem;
+			margin-left: 0;
 		}
+	}
+
+	.screenshot-row-image {
+		margin-right: -30%;
+		margin-left: 0;
 	}
 }
