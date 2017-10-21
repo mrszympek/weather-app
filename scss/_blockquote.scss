@@ -1,0 +1,33 @@
+.quote-section {
+
+}
+
+.quote-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		margin: 2rem 0;
+
+		@include mq(tablet) {
+			margin: 0 1rem 6rem;
+			flex: 0 0 calc(50% - 2rem);
+		}
+
+		blockquote {
+			font-size: px2rem(24px);
+			line-height: (36/24);
+			margin-bottom: 1.5rem;
+
+		}
+
+		cite {
+			font-size: px2rem(18px);
+		}
+	}
+}
+
+.question-mark {
+	font-size: 9rem;
+	color: #648cff;
+}

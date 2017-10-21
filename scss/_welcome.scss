@@ -45,7 +45,7 @@
 
 		@include mq(desktop) {
 
-			display: flex;
+			//display: flex;
 			margin-left: px2rem(150px);
 
 			li + li {
