@@ -136,6 +136,13 @@ $mq-breakpoints: (
 }
 
 //
+//Remove unit from value
+//
+@function strip-unit($value) {
+	@return $value / ($value * 0 + 1);
+}
+
+//
 // Fluid font
 //
 @mixin fluid-type($properties, $min-value, $max-value, $min-vw: 320px, $max-vw: 1200px) {
