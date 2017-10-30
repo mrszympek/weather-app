@@ -7,10 +7,6 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	@include mq(desktop) {
-		margin: 0 -2rem;
-	}
-
 	li {
 		margin: 1rem 0;
 		padding: 3rem 0;
@@ -19,9 +15,11 @@
 
 		@include mq(tablet) {
 			background-size: auto;
-			margin: 0 1rem 6rem;
+			margin-bottom: 6rem;
 			max-width: px2rem(560px);
-			flex: 0 0 40%;
+			flex: 0 0 50%;
+			padding: 3rem 1rem;
+
 		}
 
 		blockquote {
