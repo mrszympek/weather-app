@@ -6,17 +6,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0 -2rem;
+
+	@include mq(desktop) {
+		margin: 0 -2rem;
+	}
 
 	li {
 		margin: 1rem 0;
 		padding: 3rem 0;
 		background: url(/assets/img/quote-top.png) no-repeat top left, url(/assets/img/quote-bottom.png) no-repeat bottom right;
+		background-size: 2rem;
 
 		@include mq(tablet) {
+			background-size: auto;
 			margin: 0 1rem 6rem;
 			max-width: px2rem(560px);
-			flex: 0 0 50%;
+			flex: 0 0 40%;
 		}
 
 		blockquote {
