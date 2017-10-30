@@ -140,6 +140,7 @@
 	text-align: center;
 	padding-bottom: 4rem;
 
+
 	button {
 		animation: bounce 3s infinite;
 		margin: 0 auto;
@@ -149,6 +150,12 @@
 		height: 49px;
 		position: relative;
 		box-shadow: $box-shadow;
+		cursor: pointer;
+
+
+		&:focus {
+			outline: 0;
+		}
 
 		&::before {
 			content: '';

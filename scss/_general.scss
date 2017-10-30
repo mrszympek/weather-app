@@ -7,13 +7,21 @@
 
 html {
 	-webkit-font-smoothing: antialiased;
-	//font-size: 80%;
-	font-size: 100%;
+	//font-size: 100%;
+	font-size: 14px;
+
 	@include mq(desktop) {
+		font-size: 16px;
 	}
 }
 
 body {
+	//font-size: 14px;
+
+	@include mq(desktop) {
+		//font-size: 16px;
+	}
+
 	font-family: $font-default;
 	color: #353854;
 	box-sizing: border-box;
