@@ -10,7 +10,11 @@
 	padding-top: 3rem;
 
 	&-logo {
-		margin-right: px2rem(140px);
+		margin-right: 3rem;
+
+		@include mq(wide) {
+			margin-right: px2rem(140px);
+		}
 
 		a {
 			display: block;
@@ -45,8 +49,8 @@
 
 		@include mq(desktop) {
 
-			//display: flex;
-			margin-left: px2rem(150px);
+			display: flex;
+			margin-left: 4rem;
 
 			li + li {
 				margin-left: 3rem;
@@ -60,6 +64,10 @@
 					width: 25px;
 				}
 			}
+		}
+
+		@include mq(wide) {
+			margin-left: px2rem(150px);
 		}
 
 	}
@@ -140,7 +148,6 @@
 	text-align: center;
 	padding-bottom: 4rem;
 
-
 	button {
 		animation: bounce 3s infinite;
 		margin: 0 auto;
@@ -151,7 +158,6 @@
 		position: relative;
 		box-shadow: $box-shadow;
 		cursor: pointer;
-
 
 		&:focus {
 			outline: 0;

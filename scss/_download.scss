@@ -2,12 +2,12 @@
 	background: #648cff;
 	padding: 3rem 0;
 
+	@include mq(tablet) {
+		background: #648cff url(../assets/img/download-phones.png) no-repeat bottom/100%;
+	}
+	
 	@include mq(desktop) {
 		padding: 7.5rem 0;
-	}
-
-	@include mq(desktop) {
-		background: #648cff url(../assets/img/download-phones.png) no-repeat bottom;
 	}
 
 	h2 {
