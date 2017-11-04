@@ -10,7 +10,7 @@
 	li {
 		margin: 1rem 0;
 		padding: 3rem 0;
-		background: url(../assets/img/quote-top.png) no-repeat top left, url(../assets/img/quote-bottom.png) no-repeat bottom right;
+		background: url(../../assets/img/quote-top.png) no-repeat top left, url(../../assets/img/quote-bottom.png) no-repeat bottom right;
 		background-size: 2rem;
 
 		@include mq(tablet) {
