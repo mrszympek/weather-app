@@ -3,7 +3,7 @@
 	padding: 3rem 0;
 
 	@include mq(tablet) {
-		background: #648cff url(../assets/img/download-phones.png) no-repeat bottom/100%;
+		background: #648cff url(../../assets/img/download-phones.png) no-repeat bottom/100%;
 	}
 
 	@include mq(desktop) {
