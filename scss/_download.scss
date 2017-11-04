@@ -5,7 +5,7 @@
 	@include mq(tablet) {
 		background: #648cff url(../assets/img/download-phones.png) no-repeat bottom/100%;
 	}
-	
+
 	@include mq(desktop) {
 		padding: 7.5rem 0;
 	}
