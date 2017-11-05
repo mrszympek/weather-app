@@ -30,10 +30,19 @@
 		.nav-logo {
 			margin-right: 0;
 			margin-bottom: 3rem;
+			color: #fc6a42;
 
 			@include mq(desktop) {
 				margin-bottom: 0;
 				margin-right: 3rem;
+			}
+
+			@include mq(wide) {
+				margin-right: px2rem(140px);
+			}
+
+			span {
+				color: $blue;
 			}
 		}
 

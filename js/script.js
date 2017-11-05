@@ -7,21 +7,15 @@ $(document).ready(function() {
 
     window.sr = ScrollReveal();
     sr.reveal('.screenshot-row', { duration: 1000});
-
-
-
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if(scroll >=600) {
-            $("#nav").addClass("jQ_nav")
-        } else {
-            $("#nav").removeClass("jQ_nav")
-        }
-    });
-
-
 });
 
 
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
 
+    if(scroll > 300) {
+        $("#nav").addClass("jQ_nav");
+    } else {
+        $("#nav").removeClass("jQ_nav")
+    }
+});

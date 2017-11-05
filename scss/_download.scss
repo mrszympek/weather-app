@@ -1,9 +1,9 @@
 .download-section {
-	background: #648cff;
+	background: $blue;
 	padding: 3rem 0;
 
 	@include mq(tablet) {
-		background: #648cff url(../../assets/img/download-phones.png) no-repeat bottom/100%;
+		background: $blue url(../../assets/img/download-phones.png) no-repeat bottom/100%;
 	}
 
 	@include mq(desktop) {

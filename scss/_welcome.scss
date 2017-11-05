@@ -87,6 +87,8 @@
 	padding: 1.5rem 0;
 	width: 100%;
 	z-index: 99999;
+	transition: 3s transform;
+	transform: translateY(-80px);
 }
 
 .welcome-section {
