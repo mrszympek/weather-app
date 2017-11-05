@@ -83,6 +83,10 @@
 	&-mobile {
 		margin-right: 1rem;
 
+		@include mq(desktop) {
+			display: none;
+		}
+
 		a {
 			display: block;
 			height: 30px;
