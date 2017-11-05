@@ -1,16 +1,25 @@
 .welcome {
 	background: url("../../assets/img/background.png") no-repeat bottom;
 	background-size: cover;
-	//background-position: bottom;
 }
 
 .nav {
 	display: flex;
 	flex-direction: row;
 	padding-top: 3rem;
+	transition: 3s transform, 3s opacity;
+	line-height: 30px;
+
+	@include mq(desktop) {
+		justify-content: center;
+	}
 
 	&-logo {
-		margin-right: 3rem;
+		margin-left: 1rem;
+
+		@include mq(desktop) {
+			margin-right: 3rem;
+		}
 
 		@include mq(wide) {
 			margin-right: px2rem(140px);
@@ -18,10 +27,11 @@
 
 		a {
 			display: block;
-
-			img {
-				vertical-align: -7px;
-			}
+			font-size: 1.5rem;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 700;
 		}
 	}
 
@@ -41,14 +51,12 @@
 				font-size: px2rem(18px);
 			}
 		}
-
 	}
 
 	&-social {
 		display: none;
 
 		@include mq(desktop) {
-
 			display: flex;
 			margin-left: 4rem;
 
@@ -62,6 +70,7 @@
 				img {
 					height: 25px;
 					width: 25px;
+					vertical-align: middle;
 				}
 			}
 		}
@@ -69,8 +78,18 @@
 		@include mq(wide) {
 			margin-left: px2rem(150px);
 		}
-
 	}
+}
+
+.jQ_nav {
+	position: fixed;
+	top: 0;
+	background-color: #658cfd;
+	padding: 1.5rem 0;
+	width: 100%;
+	z-index: 99999;
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .welcome-section {
@@ -102,7 +121,6 @@
 
 	@include mq(desktop) {
 		font-size: px2rem(60px);
-
 	}
 }
 

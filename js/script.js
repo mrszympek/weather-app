@@ -9,4 +9,14 @@ $(document).ready(function() {
     sr.reveal('.screenshot-row', { duration: 1000});
 });
 
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if(scroll >= 500) {
+        $("#nav").addClass("jQ_nav");
+    } else {
+        $("#nav").removeClass("jQ_nav");
+    }
+});
+
 
