@@ -54,7 +54,7 @@ gulp.task('webserver', function () {
     connect.server({
         root: ['.tmp', '.'],
         livereload: true,
-        post: 1337
+        port: 1337
     });
 });
 
