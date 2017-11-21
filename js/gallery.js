@@ -21,7 +21,7 @@ function scrollRight() {
     } else {
         arrowRight.classList.remove("hidden");
         arrowLeft.classList.remove("hidden");
-        imageRight.src = "/assets/img/" + gallery[counter + 1];
+        imageRight.src = "assets/img/" + gallery[counter + 1];
     }
 
     imageLeft.src = "assets/img/" + gallery[counter - 1];

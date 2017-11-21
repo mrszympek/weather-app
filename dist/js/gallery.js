@@ -16,16 +16,16 @@ function scrollRight() {
     var imageRight = document.querySelector(".image--right");
 
     if (counter >= gallery.length - 1) {
-        imageRight.src = "/assets/img/" + gallery[0];
+        imageRight.src = "assets/img/" + gallery[0];
         arrowRight.classList.add("hidden");
     } else {
         arrowRight.classList.remove("hidden");
         arrowLeft.classList.remove("hidden");
-        imageRight.src = "/assets/img/" + gallery[counter + 1];
+        imageRight.src = "assets/img/" + gallery[counter + 1];
     }
 
-    imageLeft.src = "/assets/img/" + gallery[counter - 1];
-    imageCenter.src = "/assets/img/" + gallery[counter];
+    imageLeft.src = "assets/img/" + gallery[counter - 1];
+    imageCenter.src = "assets/img/" + gallery[counter];
 }
 
 function scrollLeft() {
@@ -37,14 +37,14 @@ function scrollLeft() {
 
 
     if (counter === 0) {
-        imageLeft.src = "/assets/img/" + gallery[2];
+        imageLeft.src = "assets/img/" + gallery[2];
         arrowLeft.classList.add("hidden");
     } else {
         arrowLeft.classList.remove("hidden");
         arrowRight.classList.remove("hidden");
-        imageLeft.src = "/assets/img/" + gallery[counter - 1];
+        imageLeft.src = "assets/img/" + gallery[counter - 1];
     }
 
-    imageCenter.src = "/assets/img/" + gallery[counter];
-    imageRight.src = "/assets/img/" + gallery[counter + 1];
+    imageCenter.src = "assets/img/" + gallery[counter];
+    imageRight.src = "assets/img/" + gallery[counter + 1];
 }
