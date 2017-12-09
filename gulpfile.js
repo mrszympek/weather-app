@@ -24,14 +24,13 @@ gulp.task('js', function() {
     gulp.src('js/*.js')
         .pipe(minify({
             ext:{
-                // src:'-debug.js',
                 min:'.js'
             },
             exclude: ['tasks'],
             ignoreFiles: ['.combo.js', '-min.js']
         }))
         .pipe(gulp.dest('dist/js'))
-        // .pipe(connect.reload());
+        .pipe(connect.reload());
 });
 
 gulp.task('html', function () {

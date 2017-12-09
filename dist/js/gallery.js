@@ -37,7 +37,7 @@ function scrollLeft() {
 
 
     if (counter === 0) {
-        imageLeft.src = "assets/img/" + gallery[2];
+        imageLeft.src = "assets/img/" + gallery[gallery.length - 1];
         arrowLeft.classList.add("hidden");
     } else {
         arrowLeft.classList.remove("hidden");

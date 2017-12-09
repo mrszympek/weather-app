@@ -19,3 +19,9 @@ $(window).scroll(function () {
         $("#nav").removeClass("jQ_nav")
     }
 });
+
+$(document).ready(function() {
+   $("#mobile-button").click(function() {
+       $(".jQ_mobile-menu").toggleClass("active");
+   })
+});
